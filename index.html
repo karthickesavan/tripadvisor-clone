@@ -10,12 +10,23 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Tripadvisor</title>
+    <title>Tripora | Discover Your Next Journey</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
@@ -31,50 +42,64 @@
 
 <header class="header">
 
-    <div class="header-inner">
+    <div class="header-container">
 
 
-        <div class="logo">
+        <!-- LOGO -->
 
-            <div class="owl">
+        <a href="#" class="logo">
 
-                <div class="owl-eye owl-left"></div>
-                <div class="owl-eye owl-right"></div>
+            <span class="logo-icon">
+                ✦
+            </span>
 
-                <div class="owl-beak"></div>
+            <span>
+                Tripora
+            </span>
 
-            </div>
-
-            <span>Tripadvisor</span>
-
-        </div>
+        </a>
 
 
-        <nav class="navbar">
+        <!-- NAVIGATION -->
 
-            <a class="ai-pill" href="#">
-                ✧ &nbsp; Plan with AI
-            </a>
+        <nav class="navigation">
 
-            <a href="#">Discover</a>
+            <ul>
 
-            <a href="#">Review</a>
+                <li>
+                    <a href="#destinations">
+                        Destinations
+                    </a>
+                </li>
 
-            <a href="#">More</a>
+                <li>
+                    <a href="#hotels">
+                        Hotels
+                    </a>
+                </li>
 
-            <span class="divider"></span>
+                <li>
+                    <a href="#restaurants">
+                        Restaurants
+                    </a>
+                </li>
 
-            <a class="nav-icon" href="#">♡</a>
+                <li>
+                    <a href="#activities">
+                        Activities
+                    </a>
+                </li>
 
-            <a class="nav-icon" href="#">◎</a>
-
-            <a href="#">INR</a>
-
-            <a class="sign-in" href="#">
-                Sign in
-            </a>
+            </ul>
 
         </nav>
+
+
+        <!-- HEADER BUTTON -->
+
+        <a href="#" class="login-button">
+            Sign In
+        </a>
 
     </div>
 
@@ -83,62 +108,143 @@
 
 
 <!-- =====================================================
-     HERO
+     HERO / SEARCH
 ===================================================== -->
+
+<main>
+
 
 <section class="hero">
 
-    <h1>Where to?</h1>
+    <div class="hero-content">
 
 
-    <div class="search-tabs">
-
-        <a class="tab active" href="#">
-            ⌂
-            <span>Search All</span>
-        </a>
-
-        <a class="tab" href="#">
-            ▣
-            <span>Things to Do</span>
-        </a>
-
-        <a class="tab" href="#">
-            🛏
-            <span>Hotels</span>
-        </a>
-
-        <a class="tab" href="#">
-            ♨
-            <span>Restaurants</span>
-        </a>
-
-    </div>
+        <span class="hero-label">
+            EXPLORE • DISCOVER • EXPERIENCE
+        </span>
 
 
-    <div class="search-box">
+        <h1>
+            Discover places
+            <br>
+            worth travelling to.
+        </h1>
 
-        <div class="search-input">
 
-            <span>⌕</span>
+        <p>
+            Find beautiful destinations, amazing hotels,
+            delicious restaurants and unforgettable
+            experiences.
+        </p>
 
-            <input
-                type="text"
-                placeholder="Places to go, things to do, hotels..."
-            >
+
+        <!-- SEARCH BOX -->
+
+        <div class="search-container">
+
+
+            <div class="search-input">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <div>
+
+                    <label>
+                        Destination
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Where do you want to go?"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="search-filter">
+
+                <span>
+                    ◉
+                </span>
+
+                <div>
+
+                    <label>
+                        Price
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Any price
+                        </option>
+
+                        <option>
+                            Under ₹2,000
+                        </option>
+
+                        <option>
+                            ₹2,000 - ₹5,000
+                        </option>
+
+                        <option>
+                            ₹5,000+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-filter">
+
+                <span>
+                    ★
+                </span>
+
+                <div>
+
+                    <label>
+                        Rating
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Any rating
+                        </option>
+
+                        <option>
+                            4+ stars
+                        </option>
+
+                        <option>
+                            4.5+ stars
+                        </option>
+
+                        <option>
+                            5 stars
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button class="search-button">
+                Search
+            </button>
 
         </div>
 
-
-        <a class="ask-ai" href="#">
-            Ask AI
-        </a>
-
-
-        <a class="search-btn" href="#">
-            Search
-        </a>
-
     </div>
 
 </section>
@@ -146,533 +252,152 @@
 
 
 <!-- =====================================================
-     GREEN FEATURE
+     DESTINATIONS
 ===================================================== -->
 
-<section class="green-feature">
-
-    <div class="green-image">
-
-        <img
-            src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=1000&q=85"
-            alt="Travel"
-        >
-
-    </div>
+<section
+    class="section"
+    id="destinations"
+>
 
 
-    <div class="green-line"></div>
+    <div class="section-heading">
 
+        <div>
 
-    <div class="green-content">
+            <span>
+                TRAVEL INSPIRATION
+            </span>
 
-        <h2>
-            Find things to do
-            <br>
-            for everything
-            <br>
-            you're into
-        </h2>
+            <h2>
+                Popular destinations
+            </h2>
 
+            <p>
+                Places travellers are loving right now.
+            </p>
 
-        <p>
-            Discover 400,000+ experiences and book
-            with us.
-        </p>
-
+        </div>
 
         <a href="#">
-            Explore
+            View all →
         </a>
 
     </div>
 
-</section>
+
+    <div class="destination-grid">
 
 
-
-<!-- =====================================================
-     INTEREST
-===================================================== -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>
-            Find things to do by interest
-        </h2>
-
-        <p>
-            Explore experiences for every kind of traveller
-        </p>
-
-    </div>
-
-
-    <div class="interest-grid">
-
-
-        <article class="interest-card">
+        <article class="destination-card large">
 
             <img
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=85"
-                alt="Outdoors"
-            >
-
-            <div class="card-name">
-                Outdoors
-            </div>
-
-        </article>
-
-
-        <article class="interest-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=85"
-                alt="Food"
-            >
-
-            <div class="card-name">
-                Food
-            </div>
-
-        </article>
-
-
-        <article class="interest-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=85"
-                alt="Culture"
-            >
-
-            <div class="card-name">
-                Culture
-            </div>
-
-        </article>
-
-
-        <article class="interest-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=85"
-                alt="Water"
-            >
-
-            <div class="card-name">
-                Water
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     TRAVEL INFORMATION BANNER
-===================================================== -->
-
-<section class="travel-banner">
-
-    <div class="travel-banner-image">
-
-        <img
-            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85"
-            alt="Travel destination"
-        >
-
-    </div>
-
-
-    <div class="travel-banner-content">
-
-        <small>
-            TRIPADVISOR TRAVEL GUIDES
-        </small>
-
-        <h2>
-            Explore Tripadvisor's travel playgrounds
-        </h2>
-
-        <p>
-            Get inspired by destinations, discover
-            new experiences and plan your next
-            adventure.
-        </p>
-
-        <a href="#">
-            Read more
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     NEW DELHI EXPERIENCE
-===================================================== -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>
-            Outdoor adventures in New Delhi
-        </h2>
-
-        <p>
-            Explore the city and everything around it
-        </p>
-
-    </div>
-
-
-    <div class="experience-grid">
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=85"
-                    alt="India tour"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                Wander through Old Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.8 (3,240)
-            </div>
-
-            <p>
-                Historical walking experience
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=600&q=85"
-                    alt="India"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                New Delhi sightseeing tour
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.9 (2,821)
-            </div>
-
-            <p>
-                Explore Delhi's famous landmarks
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=85"
-                    alt="Delhi"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                Delhi City Tour
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.7 (1,946)
-            </div>
-
-            <p>
-                Full day city exploration
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=600&q=85"
-                    alt="India"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                Experience Old Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.8 (1,735)
-            </div>
-
-            <p>
-                Local culture and history
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MORE EXPERIENCES
-===================================================== -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>
-            Experiences in New Delhi
-        </h2>
-
-    </div>
-
-
-    <div class="experience-grid">
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=85"
-                    alt="Hotel"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                The Leela Palace New Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.8 (8,921)
-            </div>
-
-            <p>
-                Luxury hotel experience
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85"
-                    alt="Hotel"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                The Imperial New Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.9 (7,230)
-            </div>
-
-            <p>
-                Luxury accommodation
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=85"
-                    alt="Hotel"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                Luxury Hotel, Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.7 (4,620)
-            </div>
-
-            <p>
-                Comfortable stay
-            </p>
-
-        </article>
-
-
-
-        <article class="experience-card">
-
-            <div class="experience-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=600&q=85"
-                    alt="Hotel"
-                >
-
-                <span class="heart">♡</span>
-
-            </div>
-
-            <h3>
-                The Park New Delhi
-            </h3>
-
-            <div class="rating">
-                <span>★★★★★</span>
-                4.6 (3,920)
-            </div>
-
-            <p>
-                Modern hotel in Delhi
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ICONIC PLACES
-===================================================== -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>
-            Iconic places you need to see
-        </h2>
-
-    </div>
-
-
-    <div class="places-grid">
-
-
-        <article class="place-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=700&q=85"
-                alt="Rome"
-            >
-
-            <div>
-                <h3>Rome, Italy</h3>
-            </div>
-
-        </article>
-
-
-        <article class="place-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=85"
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85"
                 alt="Paris"
             >
 
-            <div>
-                <h3>Paris, France</h3>
+            <div class="destination-overlay">
+
+                <span>
+                    FRANCE
+                </span>
+
+                <h3>
+                    Paris
+                </h3>
+
+                <p>
+                    Art, architecture and unforgettable moments.
+                </p>
+
             </div>
 
         </article>
 
 
-        <article class="place-card">
+        <article class="destination-card">
 
             <img
-                src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=700&q=85"
-                alt="Las Vegas"
+                src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=800&q=85"
+                alt="Rome"
             >
 
-            <div>
-                <h3>Las Vegas, NV</h3>
+            <div class="destination-overlay">
+
+                <span>
+                    ITALY
+                </span>
+
+                <h3>
+                    Rome
+                </h3>
+
             </div>
 
         </article>
 
 
-        <article class="place-card">
+        <article class="destination-card">
 
             <img
-                src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=700&q=85"
+                src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=85"
+                alt="Santorini"
+            >
+
+            <div class="destination-overlay">
+
+                <span>
+                    GREECE
+                </span>
+
+                <h3>
+                    Santorini
+                </h3>
+
+            </div>
+
+        </article>
+
+
+        <article class="destination-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=85"
                 alt="London"
             >
 
-            <div>
-                <h3>London, UK</h3>
+            <div class="destination-overlay">
+
+                <span>
+                    UNITED KINGDOM
+                </span>
+
+                <h3>
+                    London
+                </h3>
+
+            </div>
+
+        </article>
+
+
+        <article class="destination-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=85"
+                alt="Kyoto"
+            >
+
+            <div class="destination-overlay">
+
+                <span>
+                    JAPAN
+                </span>
+
+                <h3>
+                    Kyoto
+                </h3>
+
             </div>
 
         </article>
@@ -684,39 +409,272 @@
 
 
 <!-- =====================================================
-     WANDERER
+     HOTELS
 ===================================================== -->
 
-<section class="wanderer">
+<section
+    class="section light-section"
+    id="hotels"
+>
 
-    <div class="wanderer-image">
 
-        <img
-            src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1000&q=85"
-            alt="Adventure"
-        >
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                STAY YOUR WAY
+            </span>
+
+            <h2>
+                Popular hotels
+            </h2>
+
+            <p>
+                Comfortable stays for every kind of traveller.
+            </p>
+
+        </div>
+
+        <a href="#">
+            Explore hotels →
+        </a>
 
     </div>
 
 
-    <div class="wanderer-content">
+    <div class="listing-grid">
 
-        <div class="wanderer-logo">
-            ●
-        </div>
 
-        <h2>
-            Watch The Wanderer
-        </h2>
+        <article class="listing-card">
 
-        <p>
-            Explore the world through the eyes
-            of a curious traveller.
-        </p>
+            <div class="listing-image">
 
-        <a href="#">
-            Watch now
-        </a>
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=85"
+                    alt="Luxury hotel"
+                >
+
+                <span class="favorite">
+                    ♡
+                </span>
+
+                <span class="tag">
+                    POPULAR
+                </span>
+
+            </div>
+
+
+            <div class="listing-content">
+
+                <span class="location">
+                    Goa, India
+                </span>
+
+                <h3>
+                    Ocean Pearl Resort
+                </h3>
+
+                <div class="rating">
+
+                    <strong>
+                        4.8
+                    </strong>
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    <small>
+                        1,248 reviews
+                    </small>
+
+                </div>
+
+                <p>
+                    A peaceful beachfront stay with
+                    beautiful ocean views.
+                </p>
+
+                <strong class="price">
+                    From ₹4,999 / night
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="listing-card">
+
+            <div class="listing-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=85"
+                    alt="Hotel"
+                >
+
+                <span class="favorite">
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="listing-content">
+
+                <span class="location">
+                    Udaipur, India
+                </span>
+
+                <h3>
+                    Lakeview Palace
+                </h3>
+
+                <div class="rating">
+
+                    <strong>
+                        4.7
+                    </strong>
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    <small>
+                        896 reviews
+                    </small>
+
+                </div>
+
+                <p>
+                    Traditional architecture overlooking
+                    the beautiful city lakes.
+                </p>
+
+                <strong class="price">
+                    From ₹5,499 / night
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="listing-card">
+
+            <div class="listing-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=800&q=85"
+                    alt="Resort"
+                >
+
+                <span class="favorite">
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="listing-content">
+
+                <span class="location">
+                    Kerala, India
+                </span>
+
+                <h3>
+                    Palm Grove Retreat
+                </h3>
+
+                <div class="rating">
+
+                    <strong>
+                        4.9
+                    </strong>
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    <small>
+                        2,105 reviews
+                    </small>
+
+                </div>
+
+                <p>
+                    A relaxing tropical escape surrounded
+                    by nature.
+                </p>
+
+                <strong class="price">
+                    From ₹3,799 / night
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="listing-card">
+
+            <div class="listing-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=85"
+                    alt="Hotel room"
+                >
+
+                <span class="favorite">
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="listing-content">
+
+                <span class="location">
+                    Jaipur, India
+                </span>
+
+                <h3>
+                    The Royal Courtyard
+                </h3>
+
+                <div class="rating">
+
+                    <strong>
+                        4.6
+                    </strong>
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    <small>
+                        745 reviews
+                    </small>
+
+                </div>
+
+                <p>
+                    Experience royal-inspired hospitality
+                    in the heart of Jaipur.
+                </p>
+
+                <strong class="price">
+                    From ₹3,299 / night
+                </strong>
+
+            </div>
+
+        </article>
 
     </div>
 
@@ -725,48 +683,225 @@
 
 
 <!-- =====================================================
-     TRAVELLERS CHOICE
+     RESTAURANTS
 ===================================================== -->
 
-<section class="travellers-choice">
+<section
+    class="section"
+    id="restaurants"
+>
 
-    <div class="choice-text">
 
-        <div class="choice-logo">
-            ✦
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                TASTE THE JOURNEY
+            </span>
+
+            <h2>
+                Top-rated restaurants
+            </h2>
+
+            <p>
+                Discover local flavours and unforgettable meals.
+            </p>
+
         </div>
 
-        <h2>
-            Travellers' Choice
-            <br>
-            Awards Best of the
-            <br>
-            Best
-        </h2>
-
-        <p>
-            Among our top 1% places, stays,
-            sights, and experiences—
-            decided by you.
-        </p>
-
         <a href="#">
-            See the winners
+            Discover restaurants →
         </a>
 
     </div>
 
 
-    <div class="choice-image">
+    <div class="restaurant-grid">
+
+
+        <article class="restaurant-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+                alt="Restaurant"
+            >
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-top">
+
+                    <span>
+                        Mumbai
+                    </span>
+
+                    <span>
+                        ₹₹₹
+                    </span>
+
+                </div>
+
+                <h3>
+                    The Garden Table
+                </h3>
+
+                <div class="restaurant-rating">
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    4.8 · 1,540 reviews
+
+                </div>
+
+                <p>
+                    Contemporary dishes made with fresh
+                    local ingredients.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="restaurant-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=85"
+                alt="Restaurant"
+            >
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-top">
+
+                    <span>
+                        Chennai
+                    </span>
+
+                    <span>
+                        ₹₹
+                    </span>
+
+                </div>
+
+                <h3>
+                    Coastal Kitchen
+                </h3>
+
+                <div class="restaurant-rating">
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    4.7 · 928 reviews
+
+                </div>
+
+                <p>
+                    Authentic coastal flavours with
+                    a modern touch.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="restaurant-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+                alt="Restaurant"
+            >
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-top">
+
+                    <span>
+                        Delhi
+                    </span>
+
+                    <span>
+                        ₹₹₹
+                    </span>
+
+                </div>
+
+                <h3>
+                    Spice Route
+                </h3>
+
+                <div class="restaurant-rating">
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    4.9 · 2,340 reviews
+
+                </div>
+
+                <p>
+                    Indian cuisine inspired by recipes
+                    from across the country.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACTIVITIES
+===================================================== -->
+
+<section
+    class="section activities-section"
+    id="activities"
+>
+
+
+    <div class="activities-content">
+
+        <span>
+            MAKE MEMORIES
+        </span>
+
+        <h2>
+            Experiences you'll
+            remember forever.
+        </h2>
+
+        <p>
+            From peaceful nature escapes to exciting
+            adventures, discover activities that make
+            every trip special.
+        </p>
+
+        <a href="#">
+            Explore activities
+        </a>
+
+    </div>
+
+
+    <div class="activities-image">
 
         <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=90"
-            alt="Travel"
+            src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1000&q=85"
+            alt="Travel experience"
         >
-
-        <div class="award-label">
-            2026
-        </div>
 
     </div>
 
@@ -781,129 +916,125 @@
 <footer class="footer">
 
 
-    <div class="footer-columns">
-
-
-        <div>
-
-            <h4>
-                About Tripadvisor
-            </h4>
-
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Resources</a>
-            <a href="#">Careers</a>
-            <a href="#">Trust & Safety</a>
-            <a href="#">Contact Us</a>
-
-        </div>
-
-
-        <div>
-
-            <h4>
-                Explore
-            </h4>
-
-            <a href="#">Write a review</a>
-            <a href="#">Add a place</a>
-            <a href="#">Join</a>
-            <a href="#">Travel stories</a>
-            <a href="#">Travellers' Choice</a>
-            <a href="#">Help Centre</a>
-
-        </div>
-
-
-        <div>
-
-            <h4>
-                Do Business With Us
-            </h4>
-
-            <a href="#">Owners & DMO/CVB</a>
-            <a href="#">Business Advantage</a>
-            <a href="#">Sponsored Placements</a>
-            <a href="#">Advertise With Us</a>
-            <a href="#">Content API</a>
-
-        </div>
-
-
-        <div>
-
-            <h4>
-                Tripadvisor Sites
-            </h4>
-
-            <a href="#">Discover destinations</a>
-            <a href="#">Book experiences</a>
-            <a href="#">Find hotels</a>
-            <a href="#">Restaurant reservations</a>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="footer-bottom">
+    <div class="footer-container">
 
 
         <div class="footer-brand">
 
-            <div class="footer-owl">
-                ●
-            </div>
+            <a href="#" class="logo">
 
-            <div>
+                <span class="logo-icon">
+                    ✦
+                </span>
 
-                <strong>
-                    Tripadvisor
-                </strong>
+                <span>
+                    Tripora
+                </span>
 
-                <p>
-                    © 2026 Tripadvisor LLC All rights reserved.
-                </p>
+            </a>
 
-            </div>
+            <p>
+                Discover destinations, stays,
+                restaurants and experiences
+                around the world.
+            </p>
 
         </div>
 
 
-        <div class="footer-selects">
+        <div class="footer-column">
 
-            <button>
-                ₹ INR
-            </button>
+            <h3>
+                Explore
+            </h3>
 
-            <button>
-                English
-            </button>
+            <a href="#">
+                Destinations
+            </a>
+
+            <a href="#">
+                Hotels
+            </a>
+
+            <a href="#">
+                Restaurants
+            </a>
+
+            <a href="#">
+                Activities
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="#">
+                About us
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Follow us
+            </h3>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+            <a href="#">
+                LinkedIn
+            </a>
 
         </div>
 
     </div>
 
 
-    <div class="footer-legal">
+    <div class="footer-bottom">
 
-        <a href="#">Terms of Use</a>
+        <p>
+            © 2026 Tripora. All rights reserved.
+        </p>
 
-        <a href="#">Privacy and Cookies Statement</a>
-
-        <a href="#">Cookie Consent</a>
-
-        <a href="#">Site Map</a>
-
-        <a href="#">Accessibility</a>
+        <p>
+            Made for travel lovers.
+        </p>
 
     </div>
-
 
 </footer>
 
+
+</main>
 
 </body>
 
